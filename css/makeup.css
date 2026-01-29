@@ -134,3 +134,26 @@ header p {
 .shop-item:hover .tooltip {
   display: block;
 }
+
+
+.footer-uwu {
+  position: fixed;       /* sticks to bottom */
+  bottom: 10px;          /* 10px above the edge */
+  left: 50%;             /* center horizontally */
+  transform: translateX(-50%); /* center */
+  background: linear-gradient(90deg, #fcd3f9, #d7b3ff);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #3a214a;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: floatUwU 2s ease-in-out infinite alternate;
+}
+
+/* subtle float animation */
+@keyframes floatUwU {
+  0% { transform: translateX(-50%) translateY(0); }
+  100% { transform: translateX(-50%) translateY(-6px); }
+}

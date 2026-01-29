@@ -110,6 +110,8 @@ function buildShop() {
   });
 }
 
+
+
 // Golden click event
 function spawnGoldenClick() {
   // pick random position inside viewport
@@ -202,3 +204,10 @@ loadGame();
 buildShop();
 update();
 setInterval(saveGame, 2000);
+
+
+
+
+
+
+console.log("UwU, you found me :3");
