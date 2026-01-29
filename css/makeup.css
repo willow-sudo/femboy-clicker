@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4e9f7;
+  color: #3a214a;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background: #e7c8f2;
+  border-bottom: 3px solid #cfa7e3;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.center-panel {
+  text-align: center;
+}
+
+#score {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#bigButton {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: url("../imgs/last_ned.png") center/cover no-repeat;
+  position: absolute;
+  left: 300px;
+}
+
+#goldenClick {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: url("../imgs/last_ned__1.png") center/cover no-repeat;
+  border: 3px solid #caa200;
+  cursor: pointer;
+  display: none; /* start hidden */
+  position: absolute; /* needed for random placement */
+}
+
+
+
+#bigButton:active {
+  transform: scale(0.95);
+}
+
+#perSecond {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.right-panel {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #d7b8eb;
+}
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.shop-item button {
+  background: #e3c9f6;
+  border: 2px solid #b78cd9;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.shop-item button:hover {
+  background: #d4b2ee;
+}
+
+#prestigeButton {
+  background: #e3c9f6;
+  border: 2px solid #b78cd9;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 6px;
+  font-size: 12px;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  z-index: 10;
+}
+
+.shop-item:hover .tooltip {
+  display: block;
+}
+
