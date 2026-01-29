@@ -7,9 +7,26 @@ body {
 
 header {
   text-align: center;
-  padding: 10px;
-  background: #e7c8f2;
-  border-bottom: 3px solid #cfa7e3;
+  padding: 20px 10px;
+  background: linear-gradient(90deg, #f9c2f0, #d6b3ff);
+  border-bottom: 4px solid #b78cd9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 2px;
+  color: #3a214a;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+}
+
+header p {
+  font-size: 18px;
+  margin: 4px 0 0 0;
+  color: #3a214a;
+  letter-spacing: 1px;
 }
 
 .layout {
@@ -28,13 +45,21 @@ header {
   margin-bottom: 10px;
 }
 
+.center-panel {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal center */
+  justify-content: flex-start; /* vertical alignment */
+  position: relative; /* needed for golden orb positioning */
+}
+
 #bigButton {
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background: url("../imgs/last_ned.png") center/cover no-repeat;
-  position: absolute;
-  left: 300px;
+
 }
 
 #goldenClick {
@@ -48,8 +73,6 @@ header {
   position: absolute; /* needed for random placement */
 }
 
-
-
 #bigButton:active {
   transform: scale(0.95);
 }
@@ -57,6 +80,8 @@ header {
 #perSecond {
   margin-top: 10px;
   font-size: 16px;
+  bottom: 130px;
+ 
 }
 
 .right-panel {
@@ -91,7 +116,6 @@ header {
   border-radius: 8px;
   padding: 6px 10px;
   cursor: pointer;
-  
 }
 
 .tooltip {
@@ -110,4 +134,3 @@ header {
 .shop-item:hover .tooltip {
   display: block;
 }
-
